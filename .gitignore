@@ -11,3 +11,5 @@
 /tests/NerdStore.Catalogo.Domain.Tests/bin/Debug/netcoreapp3.1
 /src/NerdStore.Catalogo.Data/bin/Debug/netcoreapp3.1
 /src/NerdStore.Catalogo.Data/obj
+/src/NerdStore.Catalogo.Application/bin/Debug/netcoreapp3.1
+/src/NerdStore.Catalogo.Application/obj
