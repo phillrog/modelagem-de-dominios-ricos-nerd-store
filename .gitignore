@@ -3,3 +3,7 @@
 ################################################################################
 
 /.vs
+/src/NerdStore.Catalogo.Domain/obj
+/src/NerdStore.Catalogo.Domain/bin/Debug/netcoreapp3.1
+/src/NerdStore.Core/obj
+/src/NerdStore.Core/bin/Debug/netcoreapp3.1
