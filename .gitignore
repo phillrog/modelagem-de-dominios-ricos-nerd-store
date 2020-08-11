@@ -13,3 +13,5 @@
 /src/NerdStore.Catalogo.Data/obj
 /src/NerdStore.Catalogo.Application/bin/Debug/netcoreapp3.1
 /src/NerdStore.Catalogo.Application/obj
+/src/NerdStore.WebApp.MVC/obj
+/src/NerdStore.WebApp.MVC/bin/Debug/netcoreapp3.1
