@@ -42,13 +42,14 @@ namespace NerdStore.WebApp.MVC
 
 			services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
 				.AddEntityFrameworkStores<ApplicationDbContext>();
-			services.AddRazorPages();
 
 			services.AddAutoMapper(typeof(DomainToViewModelMappingProfile), typeof(ViewModelToDomainMappingProfile));
 
 			services.AddMediatR(typeof(Startup));
 
 			services.RegisterServices();
+
+			services.AddRazorPages();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -76,7 +77,10 @@ namespace NerdStore.WebApp.MVC
 
 			app.UseEndpoints(endpoints =>
 			{
-				endpoints.MapRazorPages();
+				endpoints.MapControllerRoute(
+					name: "default",
+					pattern: "{controller=Vitrine}/{action=Index}/{id?}");
+				endpoints.MapRazorPages();				
 			});
 		}
 	}
