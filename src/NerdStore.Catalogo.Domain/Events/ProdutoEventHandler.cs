@@ -7,8 +7,9 @@ using NerdStore.Core.Messages.CommonMessages.IntegrationEvents;
 namespace NerdStore.Catalogo.Domain.Events
 {
     public class ProdutoEventHandler : INotificationHandler<ProdutoAbaixoEstoqueEvent>,
-		INotificationHandler<PedidoIniciadoEvent>
-    {
+		INotificationHandler<PedidoIniciadoEvent>,
+		INotificationHandler<PedidoProcessamentoCanceladoEvent>
+	{
 		private readonly IProdutoRepository _produtoRepository;
 		private readonly IEstoqueService _estoqueService;
 		private readonly IMediatorHandler _mediatorHandler;
@@ -41,6 +42,11 @@ namespace NerdStore.Catalogo.Domain.Events
 			{
 				await _mediatorHandler.PublicarEvento(new PedidoEstoqueRejeitadoEvent(mensagem.PedidoId, mensagem.ClienteId));
 			}
+		}
+
+		public async Task Handle(PedidoProcessamentoCanceladoEvent notification, CancellationToken cancellationToken)
+		{
+			await _estoqueService.ReporListaProdutosPedido(notification.ProdutosPedido);
 		}
 	}
 }
