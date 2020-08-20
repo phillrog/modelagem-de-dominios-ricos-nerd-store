@@ -31,3 +31,5 @@
 /saga-exemplo/Pagamento/obj
 /saga-exemplo/Pedido/obj
 /saga-exemplo/RebusNetCore/obj
+/src/EventSourcing/obj
+/src/EventSourcing/bin/Debug/netcoreapp3.1
