@@ -1,5 +1,6 @@
-﻿using System;
-using NerdStore.Core.DomainObjects;
+﻿using NerdStore.Core.Messages.CommonMessages.DomainEvents;
+using System;
+
 
 namespace NerdStore.Catalogo.Domain.Events
 {
