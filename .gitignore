@@ -21,3 +21,9 @@
 /src/NerdStore.Vendas.Data/bin/Debug/netcoreapp3.1
 /src/NerdStore.Vendas.Domain/obj
 /src/NerdStore.Vendas.Domain/bin/Debug/netcoreapp3.1
+/src/NerdStore.Pagamentos.AntiCorruption/obj
+/src/NerdStore.Pagamentos.AntiCorruption/bin/Debug/netcoreapp3.1
+/src/NerdStore.Pagamentos.Business/obj
+/src/NerdStore.Pagamentos.Business/bin/Debug/netcoreapp3.1
+/src/NerdStore.Pagamentos.Data/obj
+/src/NerdStore.Pagamentos.Data/bin/Debug/netcoreapp3.1
