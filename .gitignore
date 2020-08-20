@@ -27,3 +27,7 @@
 /src/NerdStore.Pagamentos.Business/bin/Debug/netcoreapp3.1
 /src/NerdStore.Pagamentos.Data/obj
 /src/NerdStore.Pagamentos.Data/bin/Debug/netcoreapp3.1
+/saga-exemplo/Core/obj
+/saga-exemplo/Pagamento/obj
+/saga-exemplo/Pedido/obj
+/saga-exemplo/RebusNetCore/obj
